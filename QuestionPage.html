@@ -1,0 +1,63 @@
+<!DOCTYPE html>\
+<html>
+<head>
+    <title> Question </title>
+    <style type = "text/css">
+        .center{
+            text-align: center;
+        }
+        .footer{ 
+            position: fixed;     
+            text-align: center;    
+            bottom: 0px; 
+            width: 100%;
+            font-size: xx-large;
+        }
+    </style>
+
+        
+    
+</head>
+
+
+<body>
+    <header>
+        
+        <a href = "Geoparty.html" target="_self">
+            <div class = "footer"> Back to Question Page </div>  
+        </a>
+        
+    </header>
+
+    <p id="demo1"> </p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    
+    <script> 
+    let txt = "";
+    const questions = ["1","2","3","4","5","6","7","8","9","10","11"]
+    let x = Math.floor((Math.random() * 10) + 1);
+    document.getElementById("demo1").innerHTML = questions;
+    document.getElementById("demo2").innerHTML = questions[x];
+    const citrus = questions.slice(x);
+    // questions.shift(questions[x]);
+    document.getElementById("demo3").innerHTML = questions;
+    // for (let y in questions)
+    // {
+    //     txt += questions + "<br>"
+    // }
+    
+    
+    </script>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
